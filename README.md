@@ -42,17 +42,19 @@ Includes admin panel for managing products and orders.
 4. Migrate and seed the database
    php artisan migrate --seed
 
-==================== 
-5. Run the application
+==================== 5. Run the application
 php artisan serve
 Visit http://localhost:8000 in your browser
 
 =====================
 
 ## Admin Credentials
+
         'email' => 'admin@ncg.com',
+        'password => "password"
 
 ======================
 
 ## License
+
 This project is open-source and available under the MIT License.
