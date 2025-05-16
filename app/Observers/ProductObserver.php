@@ -49,8 +49,8 @@ class ProductObserver
      * @param  \App\Models\Product  $product
      * @return void
      */
-    
-    public function deleted(Product $product)
+
+    public function deleting(Product $product)
     {
         $this->logAction($product, 'deleted', null);
     }
@@ -64,6 +64,9 @@ class ProductObserver
             'changes' => $changes,
         ]);
     }
+
+
+
 
     /**
      * Handle the Product "restored" event.
